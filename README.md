@@ -13,6 +13,9 @@ AWS Elastic Load Balancers
 GitHub Actions CI/CD workflows
 The frontend communicates with the backend through the backend Kubernetes LoadBalancer service.
 
+## Movie List Screenshot
+<img width="967" height="490" alt="Screenshot 2026-09-03 013018" src="https://github.com/user-attachments/assets/e254818c-63ab-44be-b209-dc49268bc788" />
+
 
 ## License
 
