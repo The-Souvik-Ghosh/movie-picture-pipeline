@@ -31,7 +31,7 @@ The frontend communicates with the backend through the backend Kubernetes LoadBa
 # GitHub Repository
 ## Public GitHub Repository:
 
-link
+[link](https://github.com/The-Souvik-Ghosh/movie-picture-pipeline)
 
 # Application URLs
 ## Frontend
