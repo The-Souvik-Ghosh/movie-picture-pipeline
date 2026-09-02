@@ -35,7 +35,7 @@ link
 
 # Application URLs
 ## Frontend
-link
+[link](http://a6b0878ec798f4404b9344ca1ea3d198-1520025090.us-east-1.elb.amazonaws.com/)
 
 The frontend provides the Movie List and Movie Details interface.
 
