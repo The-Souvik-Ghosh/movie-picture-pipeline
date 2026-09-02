@@ -1,32 +1,27 @@
-FROM public.ecr.aws/docker/library/python:3.10-alpine
+FROM public.ecr.aws/docker/library/python:3.10-alpine3.19
 
-ENV FLASK_RUN_HOST=0.0.0.0
-
-WORKDIR /
+# Prevent GCC 14+ and sub-shells from failing on legacy C pointer warnings
+ENV CFLAGS="-Wno-error=incompatible-pointer-types"
 
 RUN adduser -u 1000 -D app
 
 RUN apk update && \
-    apk add \
-    pcre \
-    pcre-dev \
-    build-base \
-    gcc \
-    linux-headers \
-    openssl \
-    libffi-dev
+  apk add --no-cache \
+  pcre \
+  pcre-dev \
+  build-base \
+  gcc \
+  linux-headers \
+  openssl \
+  libffi-dev \
+  && pip install pipenv
 
-# Use a fixed Pipenv version compatible with the project's old lock file.
-RUN pip install --no-cache-dir pipenv==2023.2.4
+RUN mkdir -p /var/www/app && mkdir /app
 
-RUN mkdir -p /var/www/app && \
-    mkdir /app
+WORKDIR /app
 
-COPY Pipfile Pipfile.lock /app/
+COPY Pipfile* /app/
 
-RUN cd /app && \
-    pipenv install --system --deploy
+RUN pipenv install --system --deploy
 
 COPY . /app
-
-CMD ["uwsgi", "--http", ":5000", "--master", "--enable-threads", "-s", "/var/www/app/app.sock", "--manage-script-name", "--mount", "/=app:app"]
