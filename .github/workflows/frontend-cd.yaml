@@ -51,9 +51,11 @@ jobs:
             --region "$AWS_REGION" \
             --name "$EKS_CLUSTER_NAME"
 
+      - name: Update frontend image tag
+        run: |
+          sed -i "s#newTag: .*#newTag: ${GITHUB_SHA}#" starter/frontend/k8s/kustomization.yaml
+
       - name: Deploy frontend
         run: |
           kubectl apply -k starter/frontend/k8s
-          kubectl set image deployment/frontend \
-            frontend=${ECR_REPOSITORY}:${GITHUB_SHA}
           kubectl rollout status deployment/frontend --timeout=180s
