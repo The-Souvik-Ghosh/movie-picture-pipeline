@@ -43,7 +43,7 @@ jobs:
             ${{ env.ECR_REPOSITORY }}:${{ github.sha }}
             ${{ env.ECR_REPOSITORY }}:latest
           build-args: |
-            REACT_APP_MOVIE_API_URL=http://backend
+            REACT_APP_MOVIE_API_URL=http://a49d4ed451233442ab1229f89d5c8943-561618017.us-east-1.elb.amazonaws.com
 
       - name: Configure kubectl
         run: |
