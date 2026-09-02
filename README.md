@@ -40,11 +40,11 @@ The frontend communicates with the backend through the backend Kubernetes LoadBa
 The frontend provides the Movie List and Movie Details interface.
 
 ## Backend
-link
+[link](http://a49d4ed451233442ab1229f89d5c8943-561618017.us-east-1.elb.amazonaws.com)
 
 ## Backend API endpoint:
 
-link
+[link](http://a49d4ed451233442ab1229f89d5c8943-561618017.us-east-1.elb.amazonaws.com/movies)
 
 The /movies endpoint returns the available movies.
 
