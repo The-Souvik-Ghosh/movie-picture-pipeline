@@ -25,3 +25,5 @@ COPY Pipfile* /app/
 RUN pipenv install --system --deploy
 
 COPY . /app
+
+CMD ["pipenv", "run", "serve"]
