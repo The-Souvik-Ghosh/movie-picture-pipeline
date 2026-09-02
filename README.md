@@ -1,5 +1,5 @@
 # Movie Picture Pipeline
-#Project Overview
+## Project Overview
 This project deploys a full-stack Movie Application to an Amazon EKS cluster using Kubernetes and automated CI/CD pipelines with GitHub Actions.
 
 The application consists of:
