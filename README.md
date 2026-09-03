@@ -17,10 +17,9 @@ The frontend communicates with the backend through the backend Kubernetes LoadBa
 <img width="967" height="490" alt="Screenshot 2026-09-03 013018" src="https://github.com/user-attachments/assets/e254818c-63ab-44be-b209-dc49268bc788" />
 
 ## CI/CD Pipeline Screenshots
-<img width="1917" height="867" alt="Screenshot 2026-09-03 014647" src="https://github.com/user-attachments/assets/726e4084-7c69-4de8-be40-0af6dd007444" />
-<img width="1917" height="870" alt="Screenshot 2026-09-03 014631" src="https://github.com/user-attachments/assets/e2120c39-5cd4-467b-a9e8-b27ab6beb94b" />
-<img width="1917" height="850" alt="Screenshot 2026-09-03 014615" src="https://github.com/user-attachments/assets/583ea332-2df1-4fee-8f47-164c4f2f9df4" />
-<img width="1917" height="862" alt="Screenshot 2026-09-03 014553" src="https://github.com/user-attachments/assets/914832a7-2082-4cb8-bf89-f2d182f99980" />
+Backend CI
+<img width="1410" height="421" alt="Screenshot 2026-09-03 093046" src="https://github.com/user-attachments/assets/8050d351-148a-40ae-a788-05e80468eb18" />
+
 
 ## Other screenshots
 <img width="1917" height="1030" alt="Screenshot 2026-09-03 013305" src="https://github.com/user-attachments/assets/dd1f9042-40db-4323-85cf-a2a8dcac8b09" />
