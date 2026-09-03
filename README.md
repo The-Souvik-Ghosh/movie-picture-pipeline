@@ -30,11 +30,6 @@ The frontend communicates with the backend through the backend Kubernetes LoadBa
 <img width="1917" height="1007" alt="Screenshot 2026-09-03 013200" src="https://github.com/user-attachments/assets/2b623516-4e3c-48d0-a3a9-98e790e09e6f" />
 <img width="1917" height="1003" alt="Screenshot 2026-09-03 013111" src="https://github.com/user-attachments/assets/721b895d-7038-41dd-a981-0dec5a02dc7c" />
 
-# GitHub Repository
-## Public GitHub Repository:
-
-[link](https://github.com/The-Souvik-Ghosh/movie-picture-pipeline)
-
 # Application URLs
 ## Frontend
 [link](http://a6b0878ec798f4404b9344ca1ea3d198-1520025090.us-east-1.elb.amazonaws.com/)
